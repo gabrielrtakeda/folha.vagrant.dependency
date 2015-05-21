@@ -1,7 +1,9 @@
 #!/bin/bash
-DIST='2.2.23'
-VERSAO=`date +"%Y%m%d-%H%M"`
-./configure --prefix=/usr/local/apache-$DIST-$VERSAO \
+
+DIST="$1"
+VERSION="$2"
+
+./configure --prefix=/usr/local/apache-$DIST-$VERSION \
 --enable-so \
 --enable-deflate=shared \
 --enable-expires \

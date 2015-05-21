@@ -1,7 +1,10 @@
 #!/bin/bash
-DIST='5.3.20'
-VERSAO=`date +"%Y%m%d-%H%M"`
-./configure --prefix=/usr/local/php-$DIST-backend-$VERSAO \
+
+DIST="$1"
+TYPE="$2"
+VERSION="$3"
+
+./configure --prefix=/usr/local/php-$DIST-$TYPE-$VERSION \
 --with-apxs2=/usr/local/apache2/bin/apxs \
 --with-oci8=instantclient,/usr/local/instantclient_10_2/ \
 --enable-bcmath \
@@ -14,7 +17,7 @@ VERSAO=`date +"%Y%m%d-%H%M"`
 --with-config-file-path=/etc/ \
 --with-mysql=/usr \
 --with-config-file-path=/etc \
---with-xmlrpc&nbsp; \
+--with-xmlrpc \
 --with-gd=/usr \
 --with-openssl \
 --with-jpeg-dir=/usr \
