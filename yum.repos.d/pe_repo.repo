@@ -1,0 +1,8 @@
+[puppetlabs-pepackages]
+name=Puppet Labs PE Packages  - 
+baseurl=https://vm74.corp.folha.com.br:8140/packages/3.2.0/el-5-i386
+enabled=0
+gpgcheck=1
+sslverify=False
+proxy=_none_
+gpgkey=https://vm74.corp.folha.com.br:8140/packages/GPG-KEY-puppetlabs
