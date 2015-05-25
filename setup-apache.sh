@@ -1,9 +1,8 @@
 #!/bin/bash
 
-DIST="$1"
-VERSION="$2"
+PREFIX="$1"
 
-./configure --prefix=/usr/local/apache-$DIST-$VERSION \
+./configure --prefix=/usr/local/$PREFIX \
 --enable-so \
 --enable-deflate=shared \
 --enable-expires \
