@@ -6,6 +6,7 @@ PREFIX="$1"
 --with-apxs2=/usr/local/apache2/bin/apxs \
 --with-oci8=instantclient,/usr/local/instantclient_10_2/ \
 --enable-bcmath \
+--enable-calendar \
 --enable-mbstring \
 --enable-soap \
 --enable-gd-native-ttf \
@@ -17,6 +18,8 @@ PREFIX="$1"
 --with-config-file-path=/etc \
 --with-xmlrpc \
 --with-gd=/usr \
+--with-geoip=/usr \
+# --with-IBM_DB2=
 --with-openssl \
 --with-jpeg-dir=/usr \
 --with-png-dir=/usr \
@@ -27,7 +30,8 @@ PREFIX="$1"
 --enable-zip \
 --with-ldap \
 --with-pspell=/usr \
---with-xsl=/lusr/local/lib \
---with-mysqli=mysqlnd
+--with-xsl=/usr/local/lib \
+--with-mysqli=mysqlnd \
+--with-mcrypt=/usr
 
 rm -rf /root/.pearrc
