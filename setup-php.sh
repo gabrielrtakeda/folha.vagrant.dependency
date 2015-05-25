@@ -1,10 +1,8 @@
 #!/bin/bash
 
-DIST="$1"
-TYPE="$2"
-VERSION="$3"
+PREFIX="$1"
 
-./configure --prefix=/usr/local/php-$DIST-$TYPE-$VERSION \
+./configure --prefix=$PREFIX \
 --with-apxs2=/usr/local/apache2/bin/apxs \
 --with-oci8=instantclient,/usr/local/instantclient_10_2/ \
 --enable-bcmath \
