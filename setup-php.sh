@@ -18,9 +18,9 @@ PREFIX="$1"
 --with-config-file-path=/etc \
 --with-xmlrpc \
 --with-gd=/usr \
---with-geoip=/usr \
+--with-geoip=/usr/libexec/proftpd \
 # --with-IBM_DB2=
---with-openssl \
+--with-openssl=/usr/lib/openssl/engines \
 --with-jpeg-dir=/usr \
 --with-png-dir=/usr \
 --with-iconv \
